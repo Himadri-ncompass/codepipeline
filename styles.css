@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+  }
+  .todo-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    color: #fff;
+  }
+  .input-container {
+    margin-bottom: 20px;
+  }
+  input[type="text"] {
+    padding: 10px;
+    width: 70%;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #ccc;
+    background-color: #333;
+    color: #fff;
+  }
+  button {
+    padding: 10px 20px;
+    background-color: #4F83FF;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    animation: neon-glow 1.5s ease-in-out infinite alternate;
+    transition: background-color 0.3s ease-in-out;
+  }
+  button:hover {
+    background-color: #5B8FB9;
+  }
+  @keyframes neon-glow {
+    0% {
+      box-shadow: 0 0 5px #5B8FB9, 0 0 20px #5B8FB9;
+    }
+    100% {
+      box-shadow: 0 0 10px #5B8FB9, 0 0 40px #5B8FB9;
+    }
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #444;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+  }
+  li.completed span {
+    text-decoration: line-through;
+    color: #999;
+  }
